@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Scientific calculator demonstration using HTML5 forms at Galala University.">
+    <meta name="keywords" content="scientific calculator, HTML5 form, arithmetic operations">
+    <meta name="author" content="Group05_223101629_223101614">
+    <title>Scientific Calculator</title>
+    <link rel="icon" href="../Part2_Project/images/logo.png" type="image/png">
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif;">
+    <!-- AI Usage: Used Grok to generate structure ideas and explain semantic elements, but all code was written and tested manually. -->
+    <!-- ========== HEADER SECTION ========== -->
+    <header>
+        <img src="../Part2_Project/images/logo.png" alt="Calculator Logo" width="125" height="125">
+        <h1>Scientific Calculator</h1>
+        <p>A demonstration for arithmetic operations using HTML5 forms.</p>
+    </header>
+    <!-- ========== END HEADER SECTION ========== -->
+
+    <!-- ========== MAIN SECTION ========== -->
+    <main>
+        <h1>Scientific Calculator</h1>
+        <form action="calculator-result.html" method="get" aria-label="Scientific Calculator Form">
+            <input type="text" id="display" name="display" readonly placeholder="0" aria-label="Result display area">
+            <!-- ========== NUMBER INPUT FIELDSET ========== -->
+            <fieldset>
+                <legend>Number Input</legend>
+                <label for="num1">First Number: <span>*</span></label>
+                <input type="number" id="num1" name="num1" step="any" required placeholder="Enter first number">
+                <label for="operation">Operation: <span>*</span></label>
+                <select id="operation" name="operation" required>
+                    <option value="">Select Operation</option>
+                    <option value="add">+ (Add)</option>
+                    <option value="subtract">- (Subtract)</option>
+                    <option value="multiply">* (Multiply)</option>
+                    <option value="divide">/ (Divide)</option>
+                    <option value="power">^ (Power)</option>
+                    <option value="sqrt">√ (Square Root - ignores second number)</option>
+                    <option value="percent">% (Percentage)</option>
+                </select>
+                <label for="num2">Second Number: <span>*</span></label>
+                <input type="number" id="num2" name="num2" step="any" required placeholder="Enter second number">
+            </fieldset>
+            <!-- ========== END NUMBER INPUT FIELDSET ========== -->
+
+            <!-- ========== MEMORY FUNCTIONS FIELDSET ========== -->
+            <fieldset>
+                <legend>Memory Functions</legend>
+                <input type="hidden" id="memory" name="memory" value="0">
+                <input type="hidden" id="last_result" name="last_result" value="0">
+                <button type="button" name="memory_store" value="MS" aria-label="Store current display value in memory">MS (Memory Store)</button>
+                <button type="button" name="memory_recall" value="MR" aria-label="Recall value from memory to display">MR (Memory Recall)</button>
+                <button type="button" name="memory_clear" value="MC" aria-label="Clear memory value">MC (Memory Clear)</button>
+            </fieldset>
+            <!-- ========== END MEMORY FUNCTIONS FIELDSET ========== -->
+
+            <!-- ========== CALCULATION HISTORY FIELDSET ========== -->
+            <fieldset>
+                <legend>Calculation History</legend>
+                <ol id="history" aria-label="Ordered list of previous calculations">
+                    <li>5 + 3 = 8</li>
+                    <li>10 * 2 = 20</li>
+                    <li>√16 = 4</li>
+                </ol>
+            </fieldset>
+            <!-- ========== END CALCULATION HISTORY FIELDSET ========== -->
+
+            <button type="submit" aria-label="Calculate and submit to result page">=</button>
+            <button type="reset" aria-label="Clear all inputs">C (Clear All)</button>
+            <p>Note: This is an HTML5-only demonstration. No processing yet.</p>
+        </form>
+    </main>
+    <!-- ========== END MAIN SECTION ========== -->
+
+    <!-- ========== FOOTER SECTION ========== -->
+    <footer>
+        <p><a href="mailto:sms800204@gu.edu.eg">Contact Student 1</a> | <a href="mailto:omg800751@gu.edu.eg">Contact Student 2</a></p>
+        <p>&copy; 2025 Scientific Calculator Tool. All rights reserved.</p>
+        <p>Last updated: <time datetime="2025-12-02">December 2, 2025</time></p>
+    </footer>
+    <!-- ========== END FOOTER SECTION ========== -->
+</body>
+</html>
