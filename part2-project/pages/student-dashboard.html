@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Student dashboard on EduConnect at Galala University for tracking course progress, deadlines, activities, and recommendations.">
+    <meta name="keywords" content="student dashboard, course progress, learning statistics, Galala University">
+    <meta name="author" content="Group05_223101629_223101614">
+    <title>Student Dashboard - EduConnect</title>
+    <link rel="icon" href="../images/logo.png" type="image/png">
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif;">
+    <!-- AI Usage: Used Grok to generate structure ideas and explain semantic elements, but all code was written and tested manually. -->
+    
+    <!-- ========== HEADER SECTION ========== -->
+    <header>
+        <img src="../images/logo.png" alt="EduConnect Logo" width="125" height="125">
+        <h1>EduConnect</h1>
+        <p>Your Online Learning Platform</p>
+        <nav id="main-navigation" aria-label="Primary Navigation">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="course-catalog.html">Course Catalog</a></li>
+                <li><a href="student-dashboard.html" aria-current="page">Student Dashboard</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+                <li><a href="https://www.gu.edu.eg" target="_blank" rel="noopener noreferrer" aria-label="Galala University (opens in new tab)">Galala University</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- ========== END HEADER SECTION ========== -->
+
+    <!-- ========== BREADCRUMB SECTION ========== -->
+    <nav aria-label="breadcrumb" class="breadcrumb">
+        <ol>
+            <li><a href="../index.html">Home</a></li>
+            <li>Dashboard</li>
+        </ol>
+    </nav>
+    <!-- ========== END BREADCRUMB SECTION ========== -->
+
+    <!-- ========== MAIN SECTION ========== -->
+    <main>
+        <div style="display: grid; grid-template-columns: 70% 30%; gap: 20px;">
+            
+            <!-- Left Column (70%) -->
+            <div>
+                <!-- Personal header area -->
+                <section id="personal-header">
+                    <h2>Welcome, John Doe</h2>  <!-- Changed from h1 to h2 -->
+                    <figure>
+                        <img src="../images/courses/profile/john-doe-pfp.png" alt="Profile photo of John Doe" width="150" height="150">
+                        <figcaption>Your profile photo</figcaption>
+                    </figure>
+                    <dl>
+                        <dt>Total Courses</dt><dd>5</dd>
+                        <dt>Completed</dt><dd>2</dd>
+                        <dt>In Progress</dt><dd>3</dd>
+                        <dt>Certificates</dt><dd>2</dd>
+                    </dl>
+                </section>
+
+                <!-- ========== ENROLLED COURSES SECTION ========== -->
+                <section id="enrolled-courses">
+                    <h2>Enrolled Courses</h2>
+                    <article>
+                        <h3>HTML & CSS Fundamentals - Instructor: Dr. Alex Rivera</h3>
+                        <figure>
+                            <img src="../images/courses/html-css-image.png" alt="Thumbnail for HTML & CSS Fundamentals" width="450" height="300">
+                            <figcaption>Course thumbnail</figcaption>
+                        </figure>
+                        <p>Progress: 80%</p>
+                        <p>Last accessed: <time datetime="2025-12-01">December 1, 2025</time></p>
+                        <a href="course-detail.html">Continue Learning</a>
+                    </article>
+                    <article>
+                        <h3>Advanced JavaScript - Instructor: Prof. Jordan Lee</h3>
+                        <figure>
+                            <img src="../images/courses/advanced-js-image.png" alt="Thumbnail for Advanced JavaScript" width="450" height="300">
+                            <figcaption>Course thumbnail</figcaption>
+                        </figure>
+                        <p>Progress: 60%</p>
+                        <p>Last accessed: <time datetime="2025-11-30">November 30, 2025</time></p>
+                        <a href="course-detail.html">Continue Learning</a>
+                    </article>
+                    <article>
+                        <h3>React.js Development - Instructor: Dr. Taylor Kim</h3>
+                        <figure>
+                            <img src="../images/courses/react-js-image.png" alt="Thumbnail for React.js Development" width="450" height="300">
+                            <figcaption>Course thumbnail</figcaption>
+                        </figure>
+                        <p>Progress: 40%</p>
+                        <p>Last accessed: <time datetime="2025-11-28">November 28, 2025</time></p>
+                        <a href="course-detail.html">Continue Learning</a>
+                    </article>
+                </section>
+                <!-- ========== END ENROLLED COURSES SECTION ========== -->
+
+                <!-- ========== PROGRESS STATISTICS SECTION ========== -->
+                <section id="progress-statistics">
+                    <h2>Progress Statistics</h2>
+                    <dl>
+                        <dt>Courses Completed</dt><dd>2</dd>
+                        <dt>Courses In Progress</dt><dd>3</dd>
+                        <dt>Total Learning Hours</dt><dd>150</dd>
+                        <dt>Certificates Earned</dt><dd>2</dd>
+                        <dt>Average Quiz Score</dt><dd>85%</dd>
+                        <dt>Current Streak</dt><dd>5 days</dd>
+                    </dl>
+                </section>
+                <!-- ========== END PROGRESS STATISTICS SECTION ========== -->
+
+                <!-- ========== UPCOMING DEADLINES SECTION ========== -->
+                <section id="upcoming-deadlines">
+                    <h2>Upcoming Deadlines</h2>
+                    <ol>
+                        <li><strong>Assignment 1</strong> - Course: HTML & CSS Fundamentals - Due: <time datetime="2025-12-05">December 5, 2025</time> - Priority: High</li>
+                        <li><strong>Quiz 2</strong> - Course: Advanced JavaScript - Due: <time datetime="2025-12-08">December 8, 2025</time> - Priority: Medium</li>
+                        <li><strong>Project Submission</strong> - Course: React.js Development - Due: <time datetime="2025-12-10">December 10, 2025</time> - Priority: High</li>
+                        <li><strong>Homework</strong> - Course: Node.js & Backend - Due: <time datetime="2025-12-12">December 12, 2025</time> - Priority: Low</li>
+                        <li><strong>Final Exam Review</strong> - Course: Python for Data Science - Due: <time datetime="2025-12-15">December 15, 2025</time> - Priority: High</li>
+                    </ol>
+                </section>
+                <!-- ========== END UPCOMING DEADLINES SECTION ========== -->
+
+                <!-- ========== RECENT ACTIVITY SECTION ========== -->
+                <section id="recent-activity">
+                    <h2>Recent Activity</h2>
+                    
+                    <article>
+                        <h3>Quiz Completed</h3>
+                        <p><span aria-hidden="true">🧠</span> HTML & CSS Fundamentals - Quiz 2</p>
+                        <time datetime="2025-12-04">December 4, 2025</time>
+                    </article>
+                    
+                    <article>
+                        <h3>Assignment Submitted</h3>
+                        <p><span aria-hidden="true">📝</span> Advanced JavaScript - Assignment 1</p>
+                        <time datetime="2025-12-03">December 3, 2025</time>
+                    </article>
+                    
+                    <article>
+                        <h3>Course Started</h3>
+                        <p><span aria-hidden="true">📘</span> React.js Development</p>
+                        <time datetime="2025-12-02">December 2, 2025</time>
+                    </article>
+                    
+                    <article>
+                        <h3>Certificate Earned</h3>
+                        <p><span aria-hidden="true">🏆</span> HTML & CSS Fundamentals</p>
+                        <time datetime="2025-12-01">December 1, 2025</time>
+                    </article>
+                    
+                    <article>
+                        <h3>Course Started</h3>
+                        <p><span aria-hidden="true">📘</span> Advanced JavaScript</p>
+                        <time datetime="2025-11-30">November 30, 2025</time>
+                    </article>
+                </section>
+                <!-- ========== END RECENT ACTIVITY SECTION ========== -->
+            </div>
+            
+            <!-- Right Column - Aside (30%) -->
+            <aside>
+                <section>
+                    <h2>Recommended Courses</h2>
+                    <ul>
+                        <li><a href="course-detail.html">Node.js & Backend</a></li>
+                        <li><a href="course-detail.html">Python for Data Science</a></li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h2>Achievements and Badges</h2>
+                    <ul>
+                        <li>HTML Master <img src="../images/badges/html-master-badge.png" alt="HTML Master badge" width="65" height="100"></li>
+                        <li>CSS Expert <img src="../images/badges/css-expert-badge.png" alt="CSS Expert badge" width="65" height="100"></li>
+                        <li>JS Beginner <img src="../images/badges/js-beginner-badge.png" alt="JS Beginner badge" width="65" height="100"></li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h2>Learning Goals Progress</h2>
+                    <p>70% complete</p>
+                </section>
+                
+                <section>
+                    <h2>Calendar</h2>
+                    <table border="1" cellspacing="0" cellpadding="5" aria-label="December 2025 Calendar">
+                        <caption>Monthly Calendar - December 2025</caption>
+                        <thead>
+                            <tr>
+                                <th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th><th>Sun</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+                            <tr><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr>
+                            <tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td></tr>
+                            <tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td></tr>
+                            <tr><td>29</td><td>30</td><td>31</td><td></td><td></td><td></td><td></td></tr>
+                        </tbody>
+                    </table>
+                </section>
+                
+                <section>
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="course-catalog.html">Browse Courses</a></li>
+                        <li><a href="registration.html">Register for New Course</a></li>
+                        <li><a href="contact.html">Contact Support</a></li>
+                    </ul>
+                </section>
+            </aside>
+            
+        </div>
+    </main>
+    <!-- ========== END MAIN SECTION ========== -->
+
+    <!-- ========== FOOTER SECTION ========== -->
+    <footer>
+        <div class="footer-content">
+            <p><a href="mailto:sms800204@gu.edu.eg">Contact Student 1</a> | <a href="mailto:omg800751@gu.edu.eg">Contact Student 2</a></p>
+            <nav aria-label="Social Media Links">
+                <ul>
+                    <li><a href="https://www.facebook.com/EduConnectOfficial" target="_blank" rel="noopener noreferrer" aria-label="Facebook (opens in new tab)">Facebook</a></li>
+                    <li><a href="https://www.linkedin.com/company/educonnect" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in new tab)">LinkedIn</a></li>
+                    <li><a href="https://twitter.com/EduConnect" target="_blank" rel="noopener noreferrer" aria-label="Twitter (opens in new tab)">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/educonnectofficial" target="_blank" rel="noopener noreferrer" aria-label="Instagram (opens in new tab)">Instagram</a></li>
+                    <li><a href="https://www.youtube.com/channel/EduConnect" target="_blank" rel="noopener noreferrer" aria-label="YouTube (opens in new tab)">YouTube</a></li>
+                </ul>
+            </nav>
+            <p><a href="about.html">About Us</a> | <a href="contact.html">Contact</a> | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+            <p>&copy; 2025 EduConnect. All rights reserved.</p>
+            <p>Last updated: <time datetime="2025-12-05">December 5, 2025</time></p>
+        </div>
+    </footer>
+    <!-- ========== END FOOTER SECTION ========== -->
+</body>
+</html>
